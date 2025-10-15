@@ -8,35 +8,42 @@ export function Portfolio() {
   const projects = [
     {
       title: "SME Junction – Business Marketplace Platform",
-      category: "E-Commerce Platform ",
+      category: "E-Commerce Platform",
       image: "/images/smejunction.png",
+      link: "https://www.smejunction.com"
     },
     {
       title: "Kenshi Labs – Digital Transformation Platform",
-      category: "Enterprise Digital Platform ",
+      category: "Enterprise Digital Platform",
       image: "/images/kenshilabs.jpg",
+      link: "https://www.kenshilabs.com"
     },
     {
       title: "Bengal Rice Mills Association – Industry Portal",
-      category: "Industry Association Portal ",
+      category: "Industry Association Portal",
       image: "/images/brma.jpg",
+      link: "https://www.bengaliricemills.com"
     },
     {
-      title: "sight and life - NGO",
-      category: "NGO platform",
+      title: "Sight and Life - NGO",
+      category: "NGO Platform",
       image: "/images/sight.jpeg",
+      link: "https://www.sightandlife.com"
     },
     {
       title: "Collabera Digitals",
       category: "Digital Platform",
       image: "/images/collebera.jpg",
+      link: "https://collaberadigital.com"
     },
     {
       title: "SMEPulse App",
       category: "Mobile Development",
       image: "/images/smepulse1.webp",
+      link: ""
     },
   ];
+  
 
   return (
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -78,9 +85,9 @@ export function Portfolio() {
                     <div className="w-full">
                       <p className="text-primary text-sm mb-2">{project.category}</p>
                       <h3 className="text-white text-xl mb-3">{project.title}</h3>
-                      <button className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                      <a href={project.link} className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:scale-110 transition-transform duration-300">
                         <ExternalLink className="h-5 w-5" />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

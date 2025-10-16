@@ -22,13 +22,13 @@ export function Portfolio() {
       title: "Bengal Rice Mills Association – Industry Portal",
       category: "Industry Association Portal",
       image: "/images/brma.jpg",
-      link: "https://www.bengaliricemills.com"
+      link: "https://bengalricemillers.com"
     },
     {
       title: "Sight and Life - NGO",
       category: "NGO Platform",
       image: "/images/sight.jpeg",
-      link: "https://www.sightandlife.com"
+      link: "https://sightandlife.org"
     },
     {
       title: "Collabera Digitals",

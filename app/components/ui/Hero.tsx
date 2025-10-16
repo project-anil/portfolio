@@ -14,9 +14,14 @@ export function Hero() {
   };
 
   const handleDownloadResume = () => {
-    alert("Resume download would start here. Connect this to your actual resume file.");
+    // Create a link element
+    const link = document.createElement('a');
+    link.href = '/resume/Anil.pdf'; // Path to your resume file in the public folder
+    link.download = 'Anil.pdf'; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
-
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 pb-16">
       <div className="max-w-7xl mx-auto w-full">

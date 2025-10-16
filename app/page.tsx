@@ -10,6 +10,7 @@ import { Services } from "./components/ui/Services";
 import { Toaster } from "./components/ui/sonner";
 import "../styles/animations.css";
 import { Blog } from "./components/ui/Blog";
+import { ChatBot } from "./components/chatbot";
 
 export default function App() {
   return (
@@ -25,7 +26,10 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ChatBot />
       <Toaster />
     </div>
   );
 }
+
+
